@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
+  height: 95vh;
 }
 
 header {
@@ -94,5 +94,5 @@ footer {
   flex: 0;
   border-top: 1px solid slategrey;
   padding-top: 5px;
-  padding-bottom: 20px;
+  padding-bottom: env(safe-area-inset-bottom);
 }
