@@ -64,6 +64,7 @@ div.info {
 div.info>div {
   padding: 8px;
   font-weight: bold;
+  text-align: center;
 
 }
 
