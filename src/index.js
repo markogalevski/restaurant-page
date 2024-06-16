@@ -3,7 +3,6 @@ import "../src/style.css";
 const homeContents = require("../src/home");
 const menuContents = require("../src/menu");
 const aboutContents = require("../src/about");
-
 const content = document.getElementById("content");
 const homeButton = document.getElementById("home");
 homeButton.addEventListener("click", () => {
