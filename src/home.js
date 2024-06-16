@@ -1,5 +1,5 @@
 export function homeContents(content) {
-   content.innerHTML = `
+	content.innerHTML = `
       <h1>Čiurlionio 72</h1>
       <img src="../src/splash.jpg" alt="someart" />
       <div class="info">

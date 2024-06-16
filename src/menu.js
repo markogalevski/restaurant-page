@@ -1,5 +1,5 @@
 export function menuContents(content) {
-  content.innerHTML = `    
+	content.innerHTML = `    
       <h2>Tasting Menu</h2>
       <li class="meal">Rice Noodle Summer Salad</li>
       <li class="meal">Uzbek Plovas w/ Mutton</li>
