@@ -1,13 +1,27 @@
-import { resolve } from 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-export const entry = "./src/index.js";
-export const output = {
-    filename: 'main.js',
-    path: resolve(__dirname, 'dist')
+module.exports = {
+	entry: path.resolve(__dirname, "src/index.js"),
+	output: {
+		filename: "main.js",
+		path: path.resolve(__dirname, "dist"),
+	},
+	module: {
+		rules: [
+			{
+				test: /\.(png\svg|jpg|jpeg|gif)$/i,
+				type: 'asset/resource'
+			},
+			{
+				test: /\.(css)$/i,
+				use: ['style-loader', 'css-loader']
+			},
+		]
+	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: path.resolve(__dirname, "src/index.html"),
+		}),
+	],
 };
-export const plugins = [
-    new HtmlWebpackPlugin({
-        template: '.src/template.html'
-    })
-];
